@@ -1,0 +1,78 @@
+div {
+  color: red;
+}
+
+#fifth {
+  color: rgb(173, 240, 16);
+}
+
+.pg {
+  color: rgb(183, 9, 236);
+}
+
+/* Descedants */
+section p {
+  background-color: black;
+  color: white;
+}
+
+/* child */
+section > p {
+  color: red;
+}
+
+/* siblings */
+section ~ div {
+  background-color: blue;
+}
+
+/* Adjacent */
+section + div {
+  color: cyan;
+  font-size: larger;
+  background-color: brown;
+}
+
+/* attribute selector */
+/* Attribute-Name */
+[href] {
+  text-decoration: none;
+  font-size: 24px;
+}
+/* Attribute-Name */
+[href="contact.html"] {
+  color: red;
+  font-size: 32px;
+}
+/* element[Attribute-Name = "value"] */
+a[href="contact.html"] {
+  color: red;
+  font-size: 34px;
+}
+
+/* selector::pseudo-element selector */
+
+p::first-line {
+  background-color: yellow;
+}
+p::first-letter {
+  font-size: 34px;
+}
+
+a:hover {
+  color: red;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+p:nth-child(1) {
+  color: white;
+}
+
+p:nth-child(odd) {
+  color: white;
+}
+
+p:nth-child(even) {
+  color: black;
+}
